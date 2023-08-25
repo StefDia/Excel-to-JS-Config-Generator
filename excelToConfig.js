@@ -25,6 +25,8 @@ for (let i = 1; i <= 100; i++) { // in case you need to access a specific interv
     const adress = cellD ? cellD.v : null;
 
     if (name && age && adress) {
+    // optionally you can add more verifications for the values extracted 
+    // Example :  if (name.startsWith('John'))
         existingConfig[name] = {
             age,
             adress: adress
